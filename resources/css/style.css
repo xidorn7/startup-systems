@@ -18,63 +18,30 @@ html, body{
 	overflow-x: hidden;
 }
 
-.row{
-	max-width: 1140px;
-	margin: 0 auto;
-}
-
-li{
-display:inline;
-    text-decoration: none;
-}
-
-
-section{
-	padding: 80px 0;
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display:block;
+    height: 0;
+    visibility: hidden;
 }
 
 
+/* -------------------------------------------------------*/
+/* HEADER */
+/*--------------------------------------------------------*/
 header{
 	background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/man-staring-over-clouds.jpeg);
 	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/man-staring-over-clouds.jpeg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 70vh;
     background-attachment: fixed;
 }
     
-
-
-h1, h2{
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-    
-
-}
-
-h1{
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 240%;
-    word-spacing: 4px;
-    color: #fff;
-}
-
-h2{
-    font-size: 150%;
-    word-spacing: 2px;
-    margin-bottom: 30px;
-}
-
-section{
-	padding: 80px 0;
-}
-
-
-
 .main-nav{
-    margin-top: 55px;
+    margin-top: -15px;
     float: right;
     list-style: none;
 }
@@ -95,3 +62,247 @@ section{
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
+
+
+/* -------------------------------------------------------*/
+/* SECTIONS */
+/*--------------------------------------------------------*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.box{
+ padding: 1%;   
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    border-left: 0;
+}
+
+h1, h2, h3{
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 260%;
+    word-spacing: 4px;
+    color: #fff;
+}
+
+h2, h3{
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2{
+    font-size: 180%;
+}
+
+h3{
+    font-size: 110%;
+}
+
+.section-bio p, .section-hobbies p{
+    text-align:  center;
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.copy{
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.concept p{
+    text-align: center;
+}
+
+
+.copy ,.hobbies{
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.section-hobbies h3, .section-hobbies p{
+    color: #fff;
+}
+
+.section-bio, .section-hobbies{
+    background-image: -webkit-linear-gradient(rgba(241,241,242,0.7),rgba(241,241,242,0.7)), url(img/Subtle-light-patterns-Vol04.png);
+    background-image: linear-gradient(rgba(241,241,242,0.7), rgba(241,241,242,0.7)), url(img/Subtle-light-patterns-Vol04.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.section-hobbies{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/Subtle-light-patterns-Vol04.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Subtle-light-patterns-Vol03.png);
+     height: 65vh;
+}
+
+
+.box img{
+    display: block;
+    width: 100%;
+    border-radius: 25%;
+    height: auto;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    color: #e67e22;
+    margin-right: 10px;
+    
+  
+    /* secrets to align texts and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* -------------------------------------------------------*/
+/* FOOTER */
+/*--------------------------------------------------------*/
+
+
+footer{
+    background-color: #333;
+    padding: 5px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none; 
+    float: left;  
+}
+
+.social-links {
+    list-style: none; 
+    float: right; 
+}
+
+.footer-nav li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li{
+    display:inline-block;   
+}
+
+.social-links li:last-child{
+    margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited
+{
+    text-decoration: none;
+    border: 0;   
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active
+{
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited
+{
+    font-size: 160%;
+    
+}
+
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram
+{
+    display: inline-block;
+    border: none;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    padding-top: 6px;
+    background-color: #333;
+    text-align: center;
+    transition: color 0.2s;   
+}
+
+
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active,
+.ion-social-twitter:hover,
+.ion-social-twitter:active,
+.ion-social-googleplus:hover,
+.ion-social-googleplus:active,
+.ion-social-instagram:hover,
+.ion-social-instagram:active
+{
+     background-color: #aaa;  
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active
+{
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover,
+.ion-social-twitter:active
+{
+    color: #00aced; 
+}
+
+.ion-social-googleplus:hover,
+.ion-social-googleplus:active
+{
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover,
+.ion-social-instagram:active
+{
+    color: #125688;  
+}
+
+footer p{
+    color: #888;   
+    text-align: center;
+    margin-top: 10px;
+}
+
